@@ -1,0 +1,21 @@
+{
+    "name": "Isabella",
+    "age": 20,
+    "id": 123456789,
+    "institution": [
+        {
+            "name": "Universidad Icesi",
+            "id": 1,
+            "address": {
+                "id": 1
+            }
+        },
+        {
+            "name": "Universidad del Valle",
+            "id": 2,
+            "address": {
+                "id": 1
+            }
+        }
+    ]
+}
