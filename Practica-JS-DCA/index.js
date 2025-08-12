@@ -112,4 +112,84 @@ const user3={
     ]
 }
 
-console.log(user3.institution[1].address.street.related[4].final[2].finally) // 
+console.log(user3.institution[1].address.street.related[4].final[2].finally) 
+
+//funciones y condiciones
+//hosting: se pueden declarar las funciones tanto arriba como abajo (el console log)
+
+function sucesionParteUno (i, texto) { 
+    if (!(typeof i == 'number')) { //si no es...
+
+        console.log("porfavor ingrese un numero")   
+        //condicional if, siempre debe retornar un valor booleano (true o false)
+
+    }else if (i < 10) { //numeros menores que 10 
+        console.log('esto es un numero menor que 10 ')
+    } else 
+        console.log(i)
+        console.log(i + 1)
+        console.log(i + 2)
+        console.log(i + 3)
+        {
+            
+}
+
+}
+
+sucesionParteUno(1000) //esto es un numero mayor que diez
+sucesionParteUno("1000") //porfavor ingrese un numero
+
+
+const nombreCompleto = "natalia ordoñez"
+console.log(nombreCompleto.replace("a", "*"))  //rempplazar un elemento
+
+
+const isLoggedIn =true
+const isAuth= false
+const isSelected = false
+
+//personas que esten logeadas y seleccionadas, pero que no interesa que esten autenticadas
+if ((isLoggedIn && isSelected) || isAuth) { //is logged y selected true , auth es opcional
+    console.log('aceptado')
+}else {
+    console.log('no aceptado')
+}
+
+
+//for while, do while
+
+const miArreglo = [1,2,3,4]
+
+for (let i=0; i < miArreglo.length; i ++){ //empieza en 0 y termina en 3 porque es i < el arreglo osea 4 , i++ = elemento que tenia antes sumado 1 osea igual
+    console.log(miArreglo[i])
+} 
+
+
+
+//for each iterar por cada uno de los elementos y jugar con el
+//no retorna ningun resultado,  no genera algo que se pueda guardar (variable) para usarlo despues
+const arregloModificadoForEach = miArreglo.forEach (el => el * 1000) //por cada uno de los elementos , imprimalos
+console.log(arregloModificadoForEach)
+
+
+
+//map
+//recorre por cada uno de los elementos
+// se usa cuando se necesita guardar el resultado en una variable en un nuevo arreglo y manipularla posteriormente 
+const arregloModificado = miArreglo.map(el => el + 1) //funcion flecha: forma rapida de escribir una funcion
+console.log(arregloModificado)
+
+
+
+const miArreglo2 = [1,2,3,4] //4
+miArreglo2 [4] = 5
+// cambiar elementos del arreglo o agregar elementos
+
+console.log(miArreglo2)
+
+
+const duplicacion = miArreglo2 
+miArreglo2 [0] = "mensaje de prueba"
+
+console.log (miArreglo2)
+console.log(duplicacion)
